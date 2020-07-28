@@ -7,18 +7,12 @@ import javax.persistence.Id;
 
 @Entity
 public class Usuario {
-	
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
 	private String nome;
 	private String email;
 	private String senha;
-	
-	public Usuario() {
-		
-	}
 
 	@Override
 	public int hashCode() {
